@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#388AFF</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="mainColor">#388AFF</color>
+    <color name="main_black">#1D1C24</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="background_titlebar">#ff26587d</color>
+    <color name="background_light">#ffffffff</color>
+    <color name="foreground_on_dark">#ffffffff</color>
+    <color name="border_color_on_light">#ff3bb3c3</color>
+    <color name="color_black">#000000</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_line">#F0F0F0</color>
+    <color name="color_F3F3F3">#F3F3F3</color>
+    <color name="color_F5F5F5">#F5F5F5</color>
+    <color name="color_F6F6F6">#F6F6F6</color>
+    <color name="color_DADADA">#DADADA</color>
+    <color name="color_ECECEC">#ECECEC</color>
+    <color name="color_999899">#999899</color>
+    <color name="color_808080">#808080</color>
+    <color name="color_474747">#474747</color>
+    <color name="color_444444">#444444</color>
+    <color name="color_333333">#333333</color>
+
+
+    <color name="color_E1FAFF">#E1FAFF</color>
+    <color name="color_33DBFD">#33DBFD</color>
+    <color name="color_30D3E2">#30D3E2</color>
+    <color name="color_44ABFF">#44ABFF</color>
+    <color name="color_42AFFF">#42AFFF</color>
+    <color name="color_388AFF">#388AFF</color>
+    <color name="color_2970FF">#2970FF</color>
+    <color name="color_text_blue">#006BFC</color>
+    <color name="color_204FFA">#204FFA</color>
+    <color name="color_1745FF">#1745FF</color>
+
+    <color name="color_FF8181">#FF8181</color>
+    <color name="color_FF0000">#FF0000</color>
+
+
+
+
+
+</resources>

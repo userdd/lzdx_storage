@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+    <include layout="@layout/common_title_layout" />
+    <Button
+        android:id="@+id/btn_printer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/border_color_on_light"
+        android:gravity="center"
+        android:hint="@string/noconnectprinter"
+        android:textColorHint="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_printtext1dbarcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/border_color_on_light"
+        android:gravity="center"
+        android:text="@string/printtext1dbarcode"
+        android:onClick="printText1DBarcodeOnClick"/>
+
+    <Button
+        android:id="@+id/btn_look"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/border_color_on_light"
+        android:gravity="center"
+        android:text="识别一维码/二维码图片"
+        android:onClick="LookBarcodeOnClick"/>
+</LinearLayout>

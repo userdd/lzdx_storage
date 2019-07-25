@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_layout" />
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.scwang.smartrefresh.layout.header.ClassicsHeader>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="@dimen/width_300"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/width_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/width_25">
+
+                    <TextView
+                        android:id="@+id/tv_store"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/width_10"
+                        android:paddingBottom="@dimen/width_10"
+                        android:text="库房："
+                        android:textColor="@color/color_text_blue"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <EditText
+                        android:id="@+id/et_store"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/width_35"
+                        android:layout_toRightOf="@+id/tv_store"
+                        android:background="@drawable/shape_frame_white_gray"
+                        android:drawableRight="@mipmap/bottom"
+                        android:focusable="false"
+                        android:hint="请选择库房"
+                        android:paddingLeft="@dimen/width_10"
+                        android:paddingTop="@dimen/width_10"
+                        android:paddingRight="@dimen/width_10"
+                        android:paddingBottom="@dimen/width_10"
+                        android:textColor="@color/color_333333"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/textsize_12" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/width_300"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/width_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/width_25">
+
+                    <TextView
+                        android:id="@+id/tv_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/width_10"
+                        android:paddingBottom="@dimen/width_10"
+                        android:text="类别："
+                        android:textColor="@color/color_text_blue"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <EditText
+                        android:id="@+id/et_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/width_35"
+                        android:layout_toRightOf="@+id/tv_category"
+                        android:background="@drawable/shape_frame_white_gray"
+                        android:drawableRight="@mipmap/bottom"
+                        android:focusable="false"
+                        android:hint="请选择货物类别"
+                        android:paddingLeft="@dimen/width_10"
+                        android:paddingTop="@dimen/width_10"
+                        android:paddingRight="@dimen/width_10"
+                        android:paddingBottom="@dimen/width_10"
+                        android:textColor="@color/color_333333"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/textsize_12" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/width_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/width_25"
+                    android:paddingRight="@dimen/width_80">
+
+                    <TextView
+                        android:id="@+id/tv_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/width_10"
+                        android:paddingBottom="@dimen/width_10"
+                        android:text="搜索："
+                        android:textColor="@color/color_text_blue"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <EditText
+                        android:layout_centerVertical="true"
+                        android:id="@+id/et_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/width_35"
+                        android:layout_toRightOf="@+id/tv_search"
+                        android:background="@drawable/shape_frame_white_gray"
+                        android:hint="请输入关键字查询"
+                        android:paddingLeft="@dimen/width_10"
+                        android:paddingTop="@dimen/width_10"
+                        android:paddingBottom="@dimen/width_10"
+                        android:textColor="@color/color_333333"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/textsize_12" />
+
+                    <ImageView
+                        android:id="@+id/iv_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/width_10"
+                        android:src="@mipmap/find" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/width_15"
+                    android:background="@drawable/shape_blue_blue"
+                    android:paddingLeft="@dimen/width_15"
+                    android:paddingTop="@dimen/width_5"
+                    android:paddingBottom="@dimen/width_5"
+                    android:text="库存物品"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/textsize_16" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_white"></android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <com.scwang.smartrefresh.layout.footer.BallPulseFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlAnimatingColor="@color/colorPrimary"
+            app:srlNormalColor="@color/colorPrimary" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

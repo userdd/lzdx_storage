@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ycl.tabview.library.TabView
+            android:id="@+id/tab_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tab_textViewSelColor="@color/color_44ABFF"
+            app:tab_textViewUnSelColor="@color/color_999899"
+            app:tab_tabViewBackgroundColor="@color/color_white"
+            app:imageViewTextViewMargin="@dimen/width_1"
+            app:tab_imageViewHeight="@dimen/width_23"
+            app:tab_imageViewWidth="@dimen/width_23"
+            app:tab_tabViewDefaultPosition="0"
+            app:tab_tabViewGravity="bottom"
+            app:tab_tabViewHeight="@dimen/width_45"
+            app:tab_textViewSize="@dimen/width_14"
+            android:layout_marginBottom="@dimen/width_2">
+        </com.ycl.tabview.library.TabView>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

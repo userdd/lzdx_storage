@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--  android:startColor  颜色值 起始颜色
+        android:endColor    颜色值 结束颜色
+        android:centerColor 整型   渐变中间颜色，即开始颜色与结束颜色之间的颜色
+        android:angle       整型   渐变角度(PS：当angle=0时，渐变色是从左向右。
+         然后逆时针方向转，当angle=90时为从下往上。angle必须为45的整数倍)-->
+    <gradient
+        android:angle="90"
+        android:endColor="@color/color_42AFFF"
+        android:centerColor="@color/color_2970FF"
+        android:startColor="@color/color_1745FF"/>
+</shape>

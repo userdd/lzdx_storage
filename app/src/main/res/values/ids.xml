@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="title" type="id" />
+    <item name="title_back" type="id" />
+    <item name="title_right1" type="id" />
+    <item name="title_right2" type="id" />
+    <item name="include_status" type="id" />
+    <item name="rl_root" type="id" />
+    <item name="title_right" type="id" />
+    <item name="empty_root" type="id" />
+    <item name="view_empty" type="layout" />
+</resources>

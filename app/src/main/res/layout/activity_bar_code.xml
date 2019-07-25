@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_line"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_layout" />
+
+
+   <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.CoordinatorLayout
+            android:visibility="invisible"
+            android:id="@+id/coordinator_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/app_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_ECECEC">
+
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/width_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/width_15"
+                    android:layout_marginRight="@dimen/width_15"
+                    android:background="@color/color_ECECEC"
+                    android:orientation="vertical"
+                    app:layout_scrollFlags="scroll">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/width_10"
+                        android:paddingBottom="@dimen/width_10"
+                        android:text="在库信息"
+                        android:textColor="@color/color_text_blue"
+                        android:textSize="@dimen/textsize_14" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_frame_tab_white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_name_styles"
+                            android:text="商品名称：" />
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            style="@style/text_content_styles" />
+
+                        <View
+                            android:layout_width="@dimen/width_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_ECECEC" />
+
+                        <TextView
+                            style="@style/text_name_styles"
+                            android:text="预警值：" />
+
+                        <TextView
+                            android:id="@+id/tv_warn"
+                            style="@style/text_content_styles" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_frame_tab_white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_name_styles"
+                            android:text="商品规格：" />
+
+                        <TextView
+                            android:id="@+id/tv_specs"
+                            style="@style/text_content_styles" />
+
+                        <View
+                            android:layout_width="@dimen/width_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_ECECEC" />
+
+                        <TextView
+                            style="@style/text_name_styles"
+                            android:text="供应商：" />
+
+                        <TextView
+                            android:id="@+id/tv_provider_name"
+                            style="@style/text_content_styles" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_frame_tab_white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_name_styles"
+                            android:text="创建时间：" />
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            style="@style/text_content_styles" />
+
+                        <View
+                            android:layout_width="@dimen/width_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_ECECEC" />
+
+                        <TextView
+                            style="@style/text_name_styles"
+                            android:text="单价：" />
+
+                        <TextView
+                            android:id="@+id/tv_price"
+                            style="@style/text_content_styles" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_frame_tab_white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_name_styles"
+                            android:text="更新时间：" />
+
+                        <TextView
+                            android:id="@+id/tv_update_time"
+                            style="@style/text_content_styles" />
+
+                        <View
+                            android:layout_width="@dimen/width_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_ECECEC" />
+
+                        <TextView
+                            style="@style/text_name_styles"
+                            android:text="单位：" />
+
+                        <TextView
+                            android:id="@+id/tv_unit"
+                            style="@style/text_content_styles" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_frame_tab_white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_name_styles"
+                            android:text="仓库位置：" />
+
+                        <TextView
+                            android:id="@+id/tv_position"
+                            style="@style/text_content_styles" />
+
+                        <View
+                            android:layout_width="@dimen/width_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_ECECEC" />
+
+                        <TextView
+                            style="@style/text_name_styles"
+                            android:text="库存：" />
+
+                        <TextView
+                            android:id="@+id/tv_stock"
+                            style="@style/text_content_styles" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_frame_tab_white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_name_styles"
+                            android:text="仓库名称：" />
+
+                        <TextView
+                            android:id="@+id/tv_store_name"
+                            style="@style/text_content_styles" />
+
+                        <View
+                            android:layout_width="@dimen/width_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_ECECEC" />
+
+                        <TextView
+                            style="@style/text_name_styles"
+                            android:text="分类：" />
+
+                        <TextView
+                            android:id="@+id/tv_category"
+                            style="@style/text_content_styles" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_frame_tab_white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_name_styles"
+                            android:text="备注：" />
+
+                        <TextView
+                            android:id="@+id/tv_remarks"
+                            style="@style/text_content_styles"
+                            android:layout_height="@dimen/width_60"
+                            android:layout_weight="4" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="top"
+                    android:background="@color/white"
+                    app:tabIndicatorColor="@color/colorPrimary"
+                    app:tabIndicatorHeight="1dp"
+                    app:tabSelectedTextColor="@color/colorPrimary"
+                    app:tabTextColor="@color/black" />
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_ECECEC"
+                android:paddingLeft="@dimen/width_5"
+                android:paddingRight="@dimen/width_5"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </android.support.design.widget.CoordinatorLayout>
+       <com.scwang.smartrefresh.layout.footer.BallPulseFooter
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:srlAnimatingColor="@color/colorPrimary"
+           app:srlNormalColor="@color/colorPrimary" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+</LinearLayout>
